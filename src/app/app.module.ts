@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 // app
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { SharedModule } from './shared';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule, // For Material animations.
 
     SharedModule
   ],
