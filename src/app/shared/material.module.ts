@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
+import { MatSidenavModule, MatToolbarModule } from '@angular/material';
 
 // Material gesture support
 import 'hammerjs';
 
-const MATERIAL_MODULES: any[] = [];
+const MATERIAL_MODULES: any[] = [
+  MatSidenavModule,
+  MatToolbarModule
+];
 
 @NgModule({
   imports: [ ...MATERIAL_MODULES ],
