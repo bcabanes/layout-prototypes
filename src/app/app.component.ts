@@ -27,5 +27,6 @@ export class AppComponent {
       email: 'sharonbergin@ekirnok.com',
       emailVerified: true
     }
-  ]
+  ];
+  selectedUser: IUser = this.userList[0];
 }

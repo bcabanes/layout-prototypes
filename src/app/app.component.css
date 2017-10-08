@@ -6,3 +6,7 @@
 mat-sidenav {
   width: 320px;
 }
+
+.content {
+  padding: 16px;
+}

@@ -9,7 +9,7 @@
       <mat-tab-group>
         <mat-tab label="Users">
           <mat-nav-list>
-            <mat-list-item *ngFor="let user of userList">
+            <mat-list-item *ngFor="let user of userList" (click)="selectedUser = user">
               <img matListAvatar [src]="user.picture">
               <h3 matLine>{{user.name}}</h3>
             </mat-list-item>
@@ -22,7 +22,9 @@
 
     </mat-sidenav>
     <div class="content">
-      Page content
+      <img [src]="selectedUser.picture" width="90px">
+      <h2>{{selectedUser.name}}</h2>
+      <p>{{selectedUser.email}}</p>
     </div>
     <!-- /.content -->
   </mat-sidenav-container>
