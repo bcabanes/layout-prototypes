@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import {
+  MatCardModule,
   MatListModule,
   MatSidenavModule,
+  MatSlideToggleModule,
   MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
@@ -10,8 +12,10 @@ import {
 import 'hammerjs';
 
 const MATERIAL_MODULES: any[] = [
+  MatCardModule,
   MatListModule,
   MatSidenavModule,
+  MatSlideToggleModule,
   MatToolbarModule,
   MatTabsModule
 ];
