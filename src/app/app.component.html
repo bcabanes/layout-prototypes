@@ -10,7 +10,8 @@
         <mat-tab label="Users">
           <mat-nav-list>
             <mat-list-item *ngFor="let user of userList">
-              <span>{{user.name}}</span>
+              <img matListAvatar [src]="user.picture">
+              <h3 matLine>{{user.name}}</h3>
             </mat-list-item>
           </mat-nav-list>
         </mat-tab>
