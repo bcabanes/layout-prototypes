@@ -1,6 +1,16 @@
 <div fxLayout="column" fxFlex>
   <mat-toolbar color="primary">
     <span>Layout Prototypes</span>
+    <!-- Filler that pushes the menu button to the end of the toolbar -->
+    <span fxFlex></span>
+
+    <button mat-icon-button [matMenuTriggerFor]="matMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
+    <mat-menu #matMenu yPosition="below">
+      <button mat-menu-item>Open Dialog</button>
+    </mat-menu>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlex>
