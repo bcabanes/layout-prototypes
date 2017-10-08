@@ -4,18 +4,22 @@ import { NgModule } from '@angular/core';
 // app
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations   : [
+    AppComponent,
+    DialogComponent
   ],
-  imports: [
+  entryComponents: [ DialogComponent ],
+  imports        : [
     BrowserModule,
     BrowserAnimationsModule, // For Material animations.
 
     SharedModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers      : [],
+  bootstrap      : [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+}

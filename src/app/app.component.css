@@ -10,3 +10,10 @@ mat-sidenav {
 .content {
   padding: 16px;
 }
+
+.fab-bottom-right {
+  bottom: 16px;
+  position: fixed;
+  right: 16px;
+  z-index: 99;
+}
