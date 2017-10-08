@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import 'rxjs/add/operator/filter';
 // app
 import { IUser } from './user/user.model';
 import { MatDialog } from '@angular/material';
@@ -36,6 +37,11 @@ export class AppComponent {
   }
 
   public openDialog() {
-    this.dialogService.open(DialogComponent);
+    this.dialogService.open(DialogComponent).afterClosed()
+      .filter(result => !!result)
+      .subscribe(user => {
+        this.userList.push(user);
+        this.selectedUser = user;
+      });
   }
 }
